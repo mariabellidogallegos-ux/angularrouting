@@ -1,0 +1,21 @@
+<h1> Select número dobles</h1>
+<form #form="ngForm">
+    Seleccione un número
+    <select name="selectnumero" #selectnumero>
+        @for (num of arrayNumeros; track num)
+        <option>{{num}}</option>
+
+   
+
+
+
+    </select>
+    <button> Ver doble</button>
+
+</form>
+@if (doble!= 0) {
+
+<h1 style="color: aquamarine">
+El doble es {{doble}}</h1>
+}
+

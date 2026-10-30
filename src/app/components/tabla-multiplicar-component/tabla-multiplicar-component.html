@@ -1,0 +1,16 @@
+<h1> Tabla Multiplicar</h1>
+<form form="ngForm">
+        Número:
+        <input type="number" name="cajanumber" #cajanumber/>
+        <button (click)="generarTabla()">
+            Tabla multiplicar
+        </button>
+</form>
+<ul>
+    @for (number of resultados;track number;){
+        <li>{{number}}</li>
+        }
+
+</ul>
+        
+   
